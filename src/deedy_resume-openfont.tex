@@ -1,0 +1,240 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Timothy}{Kelly}{ 3900 Flying Gulch Drive, \#2, Holt, MI 48842 \\
+\href{mailto:tj.kelly0795@gmail.com}{tj.kelly0795@gmail.com} | 517.414.2813
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Michigan State University}
+\descript{BS in Computer Science}
+\descript{Minor in Mathematics}
+College of Engineering \\
+Honors College \\
+Dean's List (All Semesters) \\
+\location{Graduated May 2018 | East Lansing, MI \\ Cum. GPA: 3.95}
+\sectionsep
+
+\subsection{Jackson College}
+\descript{High School Dual Enrollment}
+\location{Fall 2013-Spring 2014 | Jackson, MI}
+Dean's List (All Semesters) \\
+\location{ Cum. GPA: 4.0}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/timjkelly}{\custombold{timjkelly}} \\
+LinkedIn://  \href{https://www.linkedin.com/in/tjkkelly}{\custombold{tjkkelly}}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+
+\subsection{Undergraduate}
+MSU Capstone Experience \\
+Introduction to Python \& C++ \\
+Algorithm Engineering \& Data Structures \\
+Computer Organization \& Architecture \\
+Unix Tools and Scripting \\
+Software Design \& OOP \\
+Operating Systems \& Compilers \\
+Computer Networks \& Security \\
+Abstract Algebra \& Number Theory \\
+Linear Algebra \& Real Analysis
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{General}
+Leadership \textbullet{}
+Written \& Verbal Communication \textbullet{}
+Agile \textbullet{} SAFe \textbullet{} TDD
+\subsection{Programming}
+Docker \textbullet{} Kubernetes \textbullet{}  
+C\# \textbullet{}   C++ \textbullet{} C \textbullet{} Python \textbullet{} Java \textbullet{}
+.Net \textbullet{} .Net Core \textbullet{} 
+.Net Standard  \textbullet{} .Net CLI \textbullet{} 
+ASP .Net Core \textbullet{} EF Core \textbullet{} 
+Azure \textbullet{} AWS \textbullet{} 
+GitHub \textbullet{} Splunk \textbullet{} \LaTeX\ \textbullet{} Moq \textbullet{}
+MS Media Foundation \textbullet{} NodeJS \textbullet{} React \textbullet{}
+Hardware and Software Trans-coding \textbullet{}
+Unit/Integration Testing \textbullet{}
+CI/CD
+
+\\
+
+\location{Tools:}
+Visual Studio (Windows/Mac/Code) \textbullet{} JetBrains Rider \textbullet{} Vim \textbullet{} NetBeans \textbullet{}
+Command Line (Unix/Windows) \textbullet{}
+Azure (Portal/DevOps) \textbullet{} TeamCity 
+
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{TechSmith Corp.}
+\descript{| Cloud Platform Software Engineer }
+\location{July 2018 – Present | Okemos, MI}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+    \item Designed and implemented ASP .Net Core Web APIs.
+    \item Created and configured continuous builds, unit tests, integration tests, and deployments in Azure DevOps for .Net Core Projects using Docker containers and Kubernetes. 
+    \item Experimented with running hosted agents in Kubernetes to optimize running integration tests with reduced authentication overhead.
+    \item Moved live services deployed in a non-RBAC enabled Kubernetes cluster to a secured cluster with RBAC.
+    \item Upgrade and improve logging in live services to get better insight into live applications.
+    \end{tightemize}
+\sectionsep
+
+\runsubsection{TechSmith Corp.}
+\descript{| Software Engineering Intern }
+\location{January 2016 – July 2018 | Okemos, MI}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+    \item Replaced deprecated screen capturing APIs with Microsoft Media Foundation and DirectX APIs within a shared internal library used across several products.
+    \item Assisted in designing and developing several new cloud micro-services. This included setting up the Web API controllers, repositories, databases, migrations, and secure configuration all in the latest .Net Core Frameworks and Entity Framework Core written in C\#. 
+    \item All code was peer-reviewed, tested, approved, and deployed to production.  All new code was unit and integration tested where appropriate.
+    \item Organized and led the summer Intern Breakout Sessions where no full-time employees were present. Required organizational and leadership skills.
+    \item Worked on several teams with sizes ranging from 2-8 using SAFe and Agile management techniques. Required clear and effective communication with team, including remote members.
+    
+    \end{tightemize}
+\sectionsep
+
+\runsubsection{MSU Information Security}
+\descript{| Student Security Analyst }
+\location{May 2017 – August 2017 | East Lansing, MI}
+\begin{tightemize}
+    \item Used Splunk to continue development on a Security Information and Event Management model to monitor and alert network security events campus-wide.
+    \item Generated searches, dashboards, and alerts from various log types to analyze network activity and anomalies.
+    \item Set up proper deployments and version control using git in multiple production environments to keep servers in parity and allow for safe deployments with rollbacks.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards} 
+\begin{tabular}{rll}
+2017	     & Finalist in Google Games by Google Inc. \\
+2016	     & Finalist in Atomic Games by Atomic Object \\
+\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SOCIETIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Societies} 
+
+\begin{tabular}{rll}
+2017   & National   & MSU's Association for Computing Machinery (ACM) Co-President \\
+2016   &  National  & MSU's ACM Event and Sponsorship Coordinator \\
+2016 	& top 12\%ile    & Tau Beta Pi Engineering Honor Society \\
+2014   &  MSU   & Honors College \\
+\end{tabular}
+\sectionsep
+
+\end{minipage} 
+\end{document}
