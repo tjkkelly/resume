@@ -1,49 +1,3 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Deedy - One Page Two Column Resume
-% LaTeX Template
-% Version 1.1 (30/4/2014)
-%
-% Original author:
-% Debarghya Das (http://debarghyadas.com)
-%
-% Original repository:
-% https://github.com/deedydas/Deedy-Resume
-%
-% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
-%
-% This template uses several fonts not included with Windows/Linux by
-% default. If you get compilation errors saying a font is missing, find the line
-% on which the font is used and either change it to a font included with your
-% operating system or comment the line out to use the default font.
-% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 
-% TODO:
-% 1. Integrate biber/bibtex for article citation under publications.
-% 2. Figure out a smoother way for the document to flow onto the next page.
-% 3. Add styling information for a "Projects/Hacks" section.
-% 4. Add location/address information
-% 5. Merge OpenFont and MacFonts as a single sty with options.
-% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% CHANGELOG:
-% v1.1:
-% 1. Fixed several compilation bugs with \renewcommand
-% 2. Got Open-source fonts (Windows/Linux support)
-% 3. Added Last Updated
-% 4. Move Title styling into .sty
-% 5. Commented .sty file.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% Known Issues:
-% 1. Overflows onto second page if any column's contents are more than the
-% vertical limit
-% 2. Hacky space on the first bullet point on the second column.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \documentclass[]{deedy-resume-openfont}
 
 
@@ -54,7 +8,7 @@
 %     LAST UPDATED DATE
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\lastupdated
+%\lastupdated
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -63,8 +17,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\namesection{Timothy}{Kelly}{ 3900 Flying Gulch Drive, \#2, Holt, MI 48842 \\
-\href{mailto:tj.kelly0795@gmail.com}{tj.kelly0795@gmail.com} | 517.414.2813
+\namesection{Timothy}{Kelly}{ 1460 Michigan St, NE Grand Rapids, MI 49503 \\
+\href{mailto:tj@teej.io}{tj@teej.io} | 517.414.2813
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -91,10 +45,7 @@ Dean's List (All Semesters) \\
 \sectionsep
 
 \subsection{Jackson College}
-\descript{High School Dual Enrollment}
 \location{Fall 2013-Spring 2014 | Jackson, MI}
-Dean's List (All Semesters) \\
-\location{ Cum. GPA: 4.0}
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -132,29 +83,15 @@ Linear Algebra \& Real Analysis
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Skills}
-\subsection{General}
-Leadership \textbullet{}
-Written \& Verbal Communication \textbullet{}
-Agile \textbullet{} SAFe \textbullet{} TDD
-\subsection{Programming}
-Docker \textbullet{} Kubernetes \textbullet{}  
-C\# \textbullet{}   C++ \textbullet{} C \textbullet{} Python \textbullet{} Java \textbullet{}
-.Net \textbullet{} .Net Core \textbullet{} 
-.Net Standard  \textbullet{} .Net CLI \textbullet{} 
-ASP .Net Core \textbullet{} EF Core \textbullet{} 
-Azure \textbullet{} AWS \textbullet{} 
-GitHub \textbullet{} Splunk \textbullet{} \LaTeX\ \textbullet{} Moq \textbullet{}
-NodeJS \textbullet{} React \textbullet{}
-Hardware and Software Trans-coding \textbullet{}
-Unit/Integration Testing \textbullet{}
-CI/CD
+\subsection{General} 
+Strong Leader/Mentor \textbullet{} Collaboration \textbullet{} Written \& Verbal Communication \textbullet{} Agile
+
+\subsection{Programming} C\# \textbullet{} .Net Core/Standard/CLI \textbullet{} .Net Framework \textbullet{} Entity Framework \textbullet{} Git/GitHub \textbullet{} Docker \textbullet{} Kubernetes \textbullet{} zsh/sh/bash \textbullet{} C/C++ \textbullet{} Python \textbullet{} SQL \textbullet{} Swagger \textbullet{} Unit/Integration Testing \textbullet{} \LaTeX\ \textbullet{} YAML \textbullet{}
 
 \\
 
 \location{Tools:}
-Visual Studio (Windows/Mac/Code) \textbullet{} JetBrains Rider \textbullet{} Vim \textbullet{} NetBeans \textbullet{}
-Command Line (Unix/Windows) \textbullet{}
-Azure (Portal/DevOps) \textbullet{} TeamCity 
+Azure Portal & DevOps \textbullet{} Azure Streaming Analytics \textbullet{} Azure DevOps \textbullet{} Azure Service Bus \textbullet{} Visual Studio (Windows/Mac/Code)  \textbullet{} JetBrains Rider \textbullet{} Kali Linux \textbullet{} TeamCity \textbullet{} Splunk \textbullet{}
 
 
 \sectionsep
@@ -176,40 +113,55 @@ Azure (Portal/DevOps) \textbullet{} TeamCity
 \section{Experience}
 
 \runsubsection{TechSmith Corp.}
-\descript{| Cloud Platform Software Engineer }
+\descript{| Software Engineer II}
 \location{July 2018 – Present | Okemos, MI}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-    \item Designed and implemented ASP .Net Core Web APIs.
-    \item Created and configured continuous builds, unit tests, integration tests, and deployments in Azure DevOps for .Net Core Projects using Docker containers and Kubernetes. 
-    \item Experimented with running hosted agents in Kubernetes to optimize running integration tests with reduced authentication overhead.
-    \item Moved live services deployed in a non-RBAC enabled Kubernetes cluster to a secured cluster with RBAC.
-    \item Upgrade and improve logging in live services to get better insight into live applications.
+        \item Design, implement, and support scalable and highly available web services/APIs.
+        \item Support and upgrade legacy web services.
+        \item Assist with team member management ensuring other engineers are equipped with the tools they need to be most effective.
+        \item Participating in and taking lead on several high severity issues.
+        \item Lead engineer for replacing a custom aggregation pipeline to use Azure Streaming Analytics to increase service stability, observability, and scalability.
+        \item Established reusable pattern for CI/CD definitions in Azure DevOps.
+        \item Worked across engineering departments to inform and resolve security vulnerabilities in company software.
+        \item Researched, prototyped, and presented new authentication pattern within kubernetes to the Architecture Team.
+        \item Collaborate with and support European-based contractors.
+        \item Lead technical interviewer for several engineering positions and candidates.
+        \item Engaged in company outreach with career fair events and MSU Capstone mentorship.
+        \item Collaborated with Microsoft to establish pattern to automate custom docker image updates.
     \end{tightemize}
+\sectionsep
 \sectionsep
 
 \runsubsection{TechSmith Corp.}
 \descript{| Software Engineering Intern }
 \location{January 2016 – July 2018 | Okemos, MI}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-    \item Replaced deprecated screen capturing APIs with Microsoft Media Foundation and DirectX APIs within a shared internal library used across several products.
-    \item Assisted in designing and developing several new cloud micro-services. This included setting up the Web API controllers, repositories, databases, migrations, and secure configuration all in the latest .Net Core Frameworks and Entity Framework Core written in C\#. 
-    \item All code was peer-reviewed, tested, approved, and deployed to production.  All new code was unit and integration tested where appropriate.
-    \item Organized and led the summer Intern Breakout Sessions where no full-time employees were present. Required organizational and leadership skills.
-    \item Worked on several teams with sizes ranging from 2-8 using SAFe and Agile management techniques. Required clear and effective communication with team, including remote members.
-    
+    \item Replaced deprecated screen capturing APIs with Microsoft Media Foundation and DirectX APIs within an internally-shared library.
+    \item Designed, implemented, and supported new cloud micro-services from API to data persistence.
+    \item Organized and led the summer Intern Breakout Sessions.
     \end{tightemize}
+\sectionsep
 \sectionsep
 
 \runsubsection{MSU Information Security}
 \descript{| Student Security Analyst }
 \location{May 2017 – August 2017 | East Lansing, MI}
 \begin{tightemize}
-    \item Used Splunk to continue development on a Security Information and Event Management model to monitor and alert network security events campus-wide.
-    \item Generated searches, dashboards, and alerts from various log types to analyze network activity and anomalies.
-    \item Set up proper deployments and version control using git in multiple production environments to keep servers in parity and allow for safe deployments with rollbacks.
+    \item Created searches, dashboards, and alerting using Splunk for network activity and anomaly analysis.
+    \item Built custom CI/CD pipelines to enable fast and safe feature deployment.
 \end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Conferences
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Conferences} 
+
+\begin{tabular}{rll}
+2019   & KubeCon & CloudNativeCon \\
+\end{tabular}
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -218,22 +170,11 @@ Azure (Portal/DevOps) \textbullet{} TeamCity
 
 \section{Awards} 
 \begin{tabular}{rll}
-2017	     & Finalist in Google Games by Google Inc. \\
-2016	     & Finalist in Atomic Games by Atomic Object \\
-\end{tabular}
-\sectionsep
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     SOCIETIES
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Societies} 
-
-\begin{tabular}{rll}
-2017   & National   & MSU's Association for Computing Machinery (ACM) Co-President \\
-2016   &  National  & MSU's ACM Event and Sponsorship Coordinator \\
-2016 	& top 12\%ile    & Tau Beta Pi Engineering Honor Society \\
-2014   &  MSU   & Honors College \\
+2020 & TechSmith Recognition: career fair leadership and engagement \\
+2019 & TechSmith Recognition: excellent severity response while minimally staffed \\
+2019 & TechSmith Recognition: talent recruiting excellence \\
+2017 & Finalist in Google Games by Google Inc. \\
+2016 & Finalist in Atomic Games by Atomic Object \\
 \end{tabular}
 \sectionsep
 
